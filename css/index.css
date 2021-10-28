@@ -171,23 +171,24 @@ header {
   align-items: center;
 }
 .btn {
-  background-color: #fbff09e8;
-  color: #1a428d;
+  background-color: #09b7fa;
+  color: #e4e808;
   width: 7.5rem;
   padding: 8px;
   outline: none;
   border: none;
-  border-radius: 1px;
+  border-radius: 20px;
   font-size: 1.125rem;
   font-weight: 600;
   font-family: "Exo 2", sans-serif;
-  box-shadow: -2px 2px 1px 1px #868f00;
+  box-shadow: rgb(0 109 202 / 98%) -2px 2px 1px 1px;
+  border: 1px solid #09b7fa;
   cursor: pointer;
   position: relative;
 }
 .btn:hover {
   transform: translateY(-2px);
-  background-color: #54fdde;
+  background-color: #00b5ec;
 }
 .btn:active {
   box-shadow: -1px 1px 1px 1px #005a41c7;
@@ -247,6 +248,8 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px;
+ 
 }
 .skills-img-wrapper,
 .service-boxes,
@@ -556,6 +559,18 @@ header {
       Responsive About / Welcome Section
   =========================================
 */
+#welcome-section{
+  height: auto;
+ 
+}
+.welcome-section-wrapper{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.welcome-section-wrapper .hero-content{
+  margin-top: 20px;
+  padding: 20px;
+}
   .wrapper h1 {
     font-size: 2.1875rem;
     font-weight: 800;
@@ -569,6 +584,7 @@ header {
     max-width: 100%;
     width: 300px;
     height: auto;
+    display: none;
   }
   .button {
     margin-top: 30px;
@@ -612,7 +628,7 @@ header {
     padding: 6px;
     font-size: 0.825rem;
   }
-
+  
   .skills-wrapper h1 {
     font-size: 2.4125rem;
     font-weight: 800;
@@ -633,7 +649,7 @@ header {
   }
   .project-boxes .project {
     width: 80%;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 }
 
@@ -648,8 +664,7 @@ header {
   }
 
   .hero-image img {
-    max-width: 100%;
-    width: 80px;
+    max-width: 100%;  
     height: auto;
   }
   .btn {
